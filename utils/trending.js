@@ -1,3 +1,1 @@
-// import { bookData } from "./bookData";
-
-export const trending = [1, 4, 5];
+export const trendingBooks = [1, 4, 5];
