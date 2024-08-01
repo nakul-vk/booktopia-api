@@ -3,8 +3,10 @@ import { PORT } from "./config.js";
 import cors from "cors";
 import { bookData } from "./utils/bookData.js";
 import { trendingBooks } from "./utils/trending.js";
+import { users } from "./utils/users.js";
 
 const app = express();
+app.use(express.json());
 
 app.use(cors({ origin: "http://localhost:3000" }));
 
@@ -41,6 +43,18 @@ app.get(`/books/trending`, (req, res) => {
   res.send(books);
 });
 
+app.post("/user/", (req, res) => {
+  const { user } = req.body;
+  if (users[user] == undefined) {
+    users[user] = user;
+    console.log(users);
+    res.send("Subscription successfull"); //Safe to add Mongodb database.
+  } else {
+    console.log(users);
+    res.send("User already exists");
+  }
+});
+
 app.listen(PORT, () => {
-  console.log("Listening to port 5555");
+  console.log(`Listening to port ${PORT}`);
 });
