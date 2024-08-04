@@ -4,11 +4,14 @@ import cors from "cors";
 import { bookData } from "./utils/bookData.js";
 import { trendingBooks } from "./utils/trending.js";
 import { users } from "./utils/users.js";
+import { requests } from "./utils/requests.js";
 
 const app = express();
 app.use(express.json());
 
 app.use(cors({ origin: "http://localhost:3000" }));
+
+// Modify booData and use indexing and change request logic.
 
 app.get(`/books/reviews/:id`, (req, res) => {
   const id = req.params.id;
@@ -47,12 +50,17 @@ app.post("/user/", (req, res) => {
   const { user } = req.body;
   if (users[user] == undefined) {
     users[user] = user;
-    console.log(users);
     res.send("Subscription successfull"); //Safe to add Mongodb database.
   } else {
-    console.log(users);
     res.send("User already exists");
   }
+});
+
+app.post("/requests/", (req, res) => {
+  const data = req.body;
+  requests.push(data);
+  console.log(requests);
+  res.send("Request added");
 });
 
 app.listen(PORT, () => {
