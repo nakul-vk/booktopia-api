@@ -2,10 +2,10 @@ export const bookData = [
   {
     id: 1,
     img: "https://via.placeholder.com/150/FFFF00/000000?Text=google.com",
-    title: "The Brothers Karamazov",
-    author: "Fyodor Dostoevsky",
+    title: "the brothers karamazov",
+    author: "fyodor dostoevsky",
     rating: "5",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     quote: [
       "The more I love humanity in general, the less I love man in particular",
       `Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love.`,
@@ -22,10 +22,10 @@ export const bookData = [
   {
     id: 2,
     img: "https://via.placeholder.com/150/FF0000/FFFFFF?Text=yttags.com",
-    title: "Pride and Prejudice",
-    author: "Jane Austen",
+    title: "pride and prejudice",
+    author: "jane austen",
     rating: "3.5",
-    genre: ["Romance"],
+    genre: ["romance"],
     quote: [
       "I could easily forgive his pride, if he had not mortified mine.",
       `Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves, vanity to what we would have others think of us.`,
@@ -42,10 +42,10 @@ export const bookData = [
   {
     id: 3,
     img: "https://via.placeholder.com/150/000000/FFFFFF/?text=y2meta.com",
-    title: "Harry Potter and the Chamber of Secrets",
-    author: "J K Rowling",
+    title: "harry potter and the chamber of secrets",
+    author: "j k rowling",
     rating: "4",
-    genre: ["Fiction", "Thriller"],
+    genre: ["fiction", "thriller"],
     quote: [
       "When in doubt, go to the library.",
       `It is our choices, Harry, that show what we truly are, far more than our abilities.`,
@@ -62,10 +62,10 @@ export const bookData = [
   {
     id: 4,
     img: "https://www.picsum.photos/",
-    title: "To Kill A Mockingbird",
-    author: "Harper Lee",
+    title: "to kill a mockingbird",
+    author: "harper lee",
     rating: "4.5",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     quote: [
       "You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.",
       `The one thing that doesn't abide by majority rule is a person's conscience.`,
@@ -82,10 +82,10 @@ export const bookData = [
   {
     id: 5,
     img: "https://via.placeholder.com/150/000000/FFFFFF/?text=y2meta.com",
-    title: "Crime and Punishment",
-    author: "Fyodor Dostoevsky",
+    title: "crime and punishment",
+    author: "fyodor dostoevsky",
     rating: "5",
-    genre: ["Thriller"],
+    genre: ["thriller"],
     quote: [
       "I could easily forgive his pride, if he had not mortified mine.",
       `Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves, vanity to what we would have others think of us.`,
@@ -104,16 +104,16 @@ export const bookData = [
   {
     id: 6,
     img: "https://via.placeholder.com/150/000000/FFFFFF/?text=y2meta.com",
-    title: "War and Peace",
-    author: "Leo Tolstoy",
+    title: "war and peace",
+    author: "leo tolstoy",
     rating: "5",
     genre: [
-      "Novel",
-      "History",
-      "Historical Fiction",
-      "War",
-      "Romance",
-      "Philosophy",
+      "novel",
+      "history",
+      "historical fiction",
+      "war",
+      "romance",
+      "philosophy",
     ],
     quote: [
       "We can know only that we know nothing. And that is the highest degree of human wisdom.",

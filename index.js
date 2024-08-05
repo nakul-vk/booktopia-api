@@ -50,17 +50,17 @@ app.post("/user/", (req, res) => {
   const { user } = req.body;
   if (users[user] == undefined) {
     users[user] = user;
-    res.send("Subscription successfull"); //Safe to add Mongodb database.
+    res.send({ message: "Subscription successfull", type: "success" }); //Safe to add Mongodb database.
   } else {
-    res.send("User already exists");
+    res.send({ message: "User already exists", type: "error" });
   }
 });
 
 app.post("/requests/", (req, res) => {
+  // check whether requester is a subscribed user else prompt to subscribe.
   const data = req.body;
   requests.push(data);
-  console.log(requests);
-  res.send("Request added");
+  res.send("Request successfull");
 });
 
 app.listen(PORT, () => {
