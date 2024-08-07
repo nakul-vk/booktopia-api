@@ -5,13 +5,13 @@ const router = Router();
 
 router.post("/", async (req, res) => {
   // check whether requester is a subscribed user else prompt to subscribe - later stage.
-  const { title, author, year } = req.body;
   try {
+    const { title, author, year } = req.body;
     const newRequest = new Request({ title, author, year });
     await Request.create(newRequest);
-    res.send("Request recieved");
+    res.send({ message: "Request recieved", type: "success" });
   } catch (error) {
-    res.send("Error occurred");
+    res.send({ message: error.message, type: "error" });
   }
 });
 
