@@ -11,7 +11,7 @@ app.use(express.json());
 
 const { DBURL, PORT } = process.env;
 
-app.use(cors({ origin: "https://booktopia-6ogo.onrender.com/" }));
+app.use(cors({ origin: "https://booktopia-6ogo.onrender.com" }));
 
 app.use("/books", bookRouter);
 app.use("/user", userRouter);
